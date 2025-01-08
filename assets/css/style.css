@@ -6255,3 +6255,417 @@ textarea.form-control {
 .ofs{
     padding:10px;
 }
+
+/* Rework IN-line css's */
+/* Header */
+.nav__item-link {
+    position: relative;
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .nav__item-link::after {
+    content: attr(data-popover);
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    z-index: 10;
+    pointer-events: none;
+  }
+
+  .nav__item-link:hover::after {
+    opacity: 1;
+    visibility: visible;
+  }
+  .vision-mission {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 50px 0;
+    padding: 20px;
+}
+
+.vision,
+.mission {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    width: 45%;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    text-align: center;
+    background-image: url('./../images/backgrounds/cta.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.vision:hover,
+.mission:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.section-title {
+    font-size: 30px;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    text-shadow: 2px 2px white;
+}
+
+.vision p,
+.mission p {
+    font-size: 24px;
+    /* Increased font size */
+    line-height: 1.6;
+    color: #fff;
+}
+
+
+
+/* Core Values Section */
+.core-values {
+    background-image: url('./../images/backgrounds/cta.jpg');
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    border: 3px solid #ffff;
+    border-radius: 15px;
+    margin: 40px auto;
+    width: 100%;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.core-values .section-title {
+    text-align: center;
+    width: 100%;
+    font-size: 30px;
+    color: black;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: bold;
+    background: linear-gradient(135deg, #FC1921, #FC1921);
+    -webkit-background-clip: text;
+}
+.value {
+    background: linear-gradient(135deg, #0d3692, #4f97b5);
+    padding: 30px;
+    border-radius: 50%;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    width: 400px;
+    height: 320px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    color: #ffffff;
+    text-align: center;
+    position: relative;
+    border: 3px solid #ffffff;
+    background-clip: padding-box;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.value:hover {
+    transform: translateY(-15px) rotateY(10deg);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+    background-color: #fc1921;
+    border-color: #fc1921;
+}
+
+.value-title {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #000000;
+    text-transform: capitalize;
+}
+
+
+.value p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #ffffff;
+    margin: 0;
+}
+
+.value i {
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: #ffffff;
+    transition: color 0.3s ease;
+}
+
+.value:hover i {
+    color: #ffffff;
+}
+
+.fa-heart {
+    color: #ff5733;
+}
+
+.fa-bolt {
+    color: #ffcc00;
+}
+
+.fa-shield-check {
+    color: #008000;
+}
+
+@media (max-width: 768px) {
+    .vision,
+    .mission {
+        width: 100%;
+        padding: 10px;
+    }
+    .section-title {
+        font-size: 22px !important;
+        margin-bottom: 10px;
+    }
+    .vision p,
+    .mission p {
+        font-size: 16px !important;
+    }
+    .value p {
+        font-size: 16px !important;
+    }
+    .core-values {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    @media (max-width: 600px) {
+        .vision-mission {
+            flex-direction: column;
+            gap: 20px;
+            align-items: center;
+            margin: 0 0 !important;
+        }
+        .value {
+            height: auto;
+            margin-bottom: 20px !important;
+        }
+    }
+}
+
+.removingDisplayText {
+    text-transform:none
+}
+
+.textCont {
+    position: relative;
+    bottom: 150px;
+  }
+
+  .slide__content {
+    /* margin-top: -202px;  */
+    text-align: center;
+    /* Optional: centers the text horizontally */
+  }
+
+  .placment_two {
+    margin-top: -272px;
+  }
+
+  .slide__desc_two {
+    max-width: none !important;
+    line-height: 0%;
+  }
+
+  .for-mobile {
+    display: none;
+  }
+
+  @media screen and (max-width:600px) {
+
+    .for-mobile {
+      display: block !important;
+    }
+
+    .image-container img {
+      width: 100%;
+      height: 100%;
+      object-fit: fill;
+      object-position: center center;
+    }
+
+    .home_redirect {
+      position: absolute;
+      top: 5%;
+      left: 3%;
+      padding: 24px 282px;
+    }
+
+    .for-desktop {
+      display: none !important;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .first-padding {
+      padding-bottom: 240px;
+    }
+    .fontsizing {
+      font-size: 23px;
+    }
+    .ocean {
+      font-size: 13px;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    .fontsizing {
+      font-size: 43px;
+    }
+    .ocean {
+      font-size: 23px;
+    }
+  }
+
+.coloringBlue {
+    color:#0d3692;
+}
+.coloringWhite {
+    color:white;
+}
+.video-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+  }
+
+  .video-bg video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .slider-1 {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .slide__content {
+    /* background: rgba(0, 0, 0, 0.5); Optional background for text readability */
+    /* padding: 20px; */
+    border-radius: 10px;
+  }
+
+  .section-header {
+    color: #6c757d;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+
+  .about-title {
+    color: #343a40;
+    margin-bottom: 25px;
+  }
+
+  .about-description {
+    line-height: 1.7;
+    color: #495057;
+  }
+
+  .about-us-title {
+    background: linear-gradient(135deg, #4f97b5, #6a8ff7);
+    /* Add a gradient for depth */
+    color: #fc1921;
+    /* padding: 16px 20px; Balanced padding for desktop */
+    margin-bottom: 40px;
+    border-radius: 6px;
+    /* Moderate rounding for modern aesthetics */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+    /* Deeper shadow for a floating effect */
+    text-align: center;
+    font-size: 50px;
+    /* Slightly larger font for boldness */
+    font-weight: 700;
+    /* Stronger emphasis */
+    letter-spacing: 1px;
+    /* Enhance legibility */
+    text-transform: uppercase;
+    /* Make the title stand out */
+    position: relative;
+    /* For decorative effects */
+    overflow: hidden;
+    /* Ensure any effects stay contained */
+  }
+
+  /* Add a decorative underline effect */
+  .about-us-title::after {
+    content: '';
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50%;
+    height: 3px;
+    background-color: #ffffff;
+    border-radius: 2px;
+    transition: width 0.3s ease;
+  }
+
+  .about-us-title:hover::after {
+    width: 80%;
+    /* Expand underline on hover for interactivity */
+  }
+
+  .lead {
+    font-size: 16px !important;
+  }
+
+  .cta-section {
+    position: relative;
+    height: 400px;
+    background: url('./../images/backgrounds/cta.jpg') no-repeat center center/cover;
+  }
+
+  .cta-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  .cta-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+  }
+
+  .cta-button {
+    border: 2px solid white;
+    color: white;
+    background: transparent;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    transition: 0.3s;
+    border-radius: 40px;
+    /* Adds rounded corners to the button */
+  }
+
+  .cta-button:hover {
+    background: white;
+    color: black;
+  }

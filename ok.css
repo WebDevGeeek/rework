@@ -1,0 +1,42 @@
+/* Header */
+.nav__item-link {
+    position: relative;
+    text-decoration: none;
+    color: inherit;
+    }
+    
+    .nav__item-link::after {
+    content: attr(data-popover);
+    /* Use the data-popover attribute for content */
+    position: absolute;
+    top: 100%;
+    /* Position below the link */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    /* Background color */
+    color: white;
+    /* Text color */
+    padding: 5px 10px;
+    /* Padding for the popover */
+    border-radius: 5px;
+    /* Rounded corners */
+    white-space: nowrap;
+    /* Prevent text wrapping */
+    opacity: 0;
+    /* Initially hidden */
+    visibility: hidden;
+    /* Make sure it's not interactive */
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    /* Smooth transition */
+    z-index: 10;
+    /* Ensure it appears above other elements */
+    pointer-events: none;
+    /* Prevent interaction */
+    }
+    
+    .nav__item-link:hover::after {
+    opacity: 1;
+    /* Show the popover */
+    visibility: visible;
+    }
