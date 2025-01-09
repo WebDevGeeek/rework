@@ -2176,8 +2176,14 @@ textarea.form-control {
 .header-transparent .module__btn,
 .header-transparent .module__btn-request,
 .header-transparent .nav__item .nav__item-link {
-    color: #fff;
+    color: black;
 }
+body[data-page="home"] .header-transparent .module__btn, 
+body[data-page="home"] .header-transparent .module__btn-request, 
+body[data-page="home"] .header-transparent .nav__item .nav__item-link {
+    color: #fff; /* White for the homepage */
+}
+
 .header-transparent .module__btn-phone a {
     color: #fff;
 }
@@ -2242,7 +2248,7 @@ textarea.form-control {
     display: none !important;
 }
 .fixed-navbar .nav__item .nav__item-link {
-    color: #333;
+    color: #333 !important;
     line-height: 90px;
 }
 .fixed-navbar .logo-light {
@@ -6674,7 +6680,7 @@ textarea.form-control {
   .removingMB {
     margin-bottom: 0px !important;
   }
-
+/* CUSTOM CSS  */
   /* Color's Of modec */
   .modecBlue {
     color: #003399;

@@ -21,8 +21,10 @@
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
-<body>
-  <div class="wrapper">
+<body data-page="home">
+
+
+  <div class="wrapper" >
     <!-- =========================
         Header
     =========================== -->
@@ -148,7 +150,7 @@
                   <img src="assets/images/placeholder/31343C.svg" class="card-img-top" alt="Diversity and Inclusion">
                 </div>
                 <div class="card-body">
-                <a href="<?php echo base_url(); ?>recruitment-scam" class="hoverUnderLine">
+                <a href="<?php echo base_url(); ?>recruit" class="hoverUnderLine">
                     <h5 class="card-title secondaryTitles mb-0 addingCopy">Recruitment Policy</h5>
                   </a>
                 </div>
@@ -160,7 +162,7 @@
                   <img src="assets/images/placeholder/31343C.svg" class="card-img-top" alt="Diversity and Inclusion">
                 </div>
                 <div class="card-body">
-                <a href="<?php echo base_url(); ?>recruitment-scam" class="hoverUnderLine">
+                <a href="<?php echo base_url(); ?>diversity" class="hoverUnderLine">
                     <h5 class="card-title secondaryTitles mb-0 addingCopy">Diversity and Inclusion</h5>
                   </a>
                 </div>
@@ -172,7 +174,7 @@
                   <img src="assets/images/placeholder/31343C.svg" class="card-img-top" alt="Recruitment Scam">
                 </div>
                 <div class="card-body">
-                  <a href="<?php echo base_url(); ?>recruitment-scam" class="hoverUnderLine">
+                  <a href="<?php echo base_url(); ?>scams" class="hoverUnderLine">
                     <h5 class="card-title secondaryTitles mb-0 addingCopy">Recruitment Scam</h5>
                   </a>
                 </div>

@@ -64,6 +64,9 @@ $route['homepage'] = 'homepage';
 $route['vission'] = 'Vission';
 $route['careers'] = 'Careers';
 $route['privacy-policy'] = 'Privacy';
+$route['recruit-policy'] = 'Recruit';
+$route['scams'] = 'Scams';
+$route['diversity'] = 'Diversity';
 
 
 
