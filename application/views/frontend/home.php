@@ -32,55 +32,56 @@
     <!-- ============================
     Slider
 ============================== -->
-    <section id="slider1" class="slider slider-1">
-      <div class="carousel owl-carousel carousel-arrows carousel-dots" data-slide="1" data-slide-md="1"
-        data-slide-sm="1" data-autoplay="false" data-nav="true" data-dots="true" data-space="0" data-loop="true"
-        data-speed="3000" data-transition="fade" data-animate-out="fadeOut" data-animate-in="fadeIn">
-        <div class="slide-item align-v-h bg-overlay">
-          <div class="bg-img for-desktop"><img src="assets/images/banners/MV33.jpg" alt="slide img"></div>
-          <div class="bg-img for-mobile img-fluid"><img src="assets/images/loader/edit/mobile_view01.jpg" alt="slide img"></div>
-          <div class="textCont">
-            <div class="row">
-              <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
-                <div class="slide__content first-padding">
-                  <h2 class="slide__title placment_one coloringBlue">TOYO MODEC OFS India Private Limited</h2>
-                  <p class="slide__desc slide__desc_two">TOYO MODEC OFS India Private Limited (OFS India) is a joint venture company of <br> Toyo Engineering India Private Limited (Toyo India), a subsidiary of Toyo Engineering Corporation, Japan and Offshore Frontier Solutions Pte. Ltd. (OFS), a MODEC Group company</p>
-                </div><!-- /.slide-content -->
-              </div><!-- /.col-xl-9 -->
-            </div><!-- /.row -->
-          </div><!-- /.container -->
-        </div><!-- /.slide-item -->
-        <div class="slide-item align-v-h bg-overlay">
-          <div class="bg-img for-desktop"><img src="assets/images/banners/FPSO_Carioca_MV30.jpg" alt="slide img"></div>
-          <div class="bg-img for-mobile img-fluid"><img src="assets/images/loader/edit/mobile_view02.jpg" alt="slide img"></div>
+<section id="slider1" class="slider slider-1">
+  <!-- Video Background -->
+  <video autoplay muted loop class="bg-video">
+    <source src="assets/video/tw.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
 
-          <div class="textCont">
-            <div class="row">
-              <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
-                <div class="slide__content  ">
-                  <h2 class="slide__title coloringWhite">OFS India will focus on FEED, Detail Engineering,<br> and Procurement support for FPSO projects</h2>
-                </div><!-- /.slide-content -->
-              </div><!-- /.col-xl-9 -->
-            </div><!-- /.row -->
-          </div><!-- /.container -->
-        </div><!-- /.slide-item -->
+  <div class="carousel owl-carousel carousel-arrows carousel-dots" data-slide="1" data-slide-md="1"
+    data-slide-sm="1" data-autoplay="false" data-nav="true" data-dots="true" data-space="0" data-loop="true"
+    data-speed="3000" data-transition="fade" data-animate-out="fadeOut" data-animate-in="fadeIn">
+    
+    <div class="slide-item text-carousel">
+      <div class="textCont">
+        <div class="row">
+          <div class="col-12">
+            <!-- <div class="slide__content">
+              <h2 class="slide__title placment_one coloringBlue">TOYO MODEC OFS India Private Limited</h2>
+              <p class="slide__desc slide__desc_two">TOYO MODEC OFS India Private Limited (OFS India) is a joint venture company of <br> Toyo Engineering India Private Limited (Toyo India), a subsidiary of Toyo Engineering Corporation, Japan and Offshore Frontier Solutions Pte. Ltd. (OFS), a MODEC Group company</p>
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="slide-item text-carousel">
+      <div class="textCont">
+        <div class="row">
+          <div class="col-12">
+            <!-- <div class="slide__content">
+              <h2 class="slide__title coloringWhite">OFS India will focus on FEED, Detail Engineering,<br> and Procurement support for FPSO projects</h2>
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="slide-item text-carousel">
+      <div class="textCont">
+        <div class="row">
+          <div class="col-12">
+            <div class="slide__content">
+              <!-- <h2 class="slide__title coloringWhite">OFS India is scheduled to commence operations from April 2025</h2> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div><!-- /.carousel -->
+</section>
 
-        <div class="slide-item align-v-h bg-overlay">
-          <div class="bg-img for-desktop"><img src="assets/images/loader/edit/FPSO.jpg" alt="slide img"></div>
-          <div class="bg-img for-mobile img-fluid"><img src="assets/images/loader/edit/mobile_view03.jpg" alt="slide img"></div>
-          <div class="textCont">
-            <div class="row">
-              <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
-                <div class="slide__content">
-                  <h2 class="slide__title coloringWhite">OFS India is scheduled to commence operations from April 2025
-                  </h2>
-                </div><!-- /.slide-content -->
-              </div><!-- /.col-xl-9 -->
-            </div><!-- /.row -->
-          </div><!-- /.container -->
-        </div><!-- /.slide-item -->
-      </div><!-- /.carousel -->
-    </section>
 
     <!-- New Added -->
     <section class="py-5 bg-light">

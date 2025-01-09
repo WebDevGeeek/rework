@@ -4,7 +4,7 @@ html {
 }
 body {
     background-color: #fff;
-    font-family: Roboto, sans-serif;
+    font-family: 'Russo One', sans-serif;
     font-size: 14px;
     font-weight: 400;
     color: #9b9b9b;
@@ -17,7 +17,7 @@ body {
 }
 /* Set Arial as the default font */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Russo One', sans-serif;
     margin: 0;
     padding: 0;
   }
@@ -120,7 +120,7 @@ select {
     font-size: 13px;
 }
 .font-secondary {
-    font-family: Roboto, sans-serif;
+    font-family: 'Russo One', sans-serif;
 }
 .lh-1 {
     line-height: 1 !important;
@@ -824,7 +824,7 @@ h4,
 h5,
 h6 {
     color: #1b1a1a;
-    /* font-family: Teko, sans-serif; */
+    font-family: 'Russo One', sans-serif;
     text-transform: capitalize;
     font-weight: 500;
     line-height: 1.1;
@@ -1026,7 +1026,7 @@ h6 {
     margin-top: -100px;
 }
 .pagetitle__subheading {
-    font-family: Roboto, sans-serif;
+    font-family: 'Russo One', sans-serif;
     font-size: 17px;
     font-weight: 700;
     color: #f9f9f9;
@@ -2000,7 +2000,7 @@ textarea.form-control {
 }
 .navbar .nav__item .nav__item-link {
     font-size: 15px;
-    font-weight: 700;
+    font-weight: lighter;
     text-transform: capitalize;
     display: block;
     position: relative;
@@ -2085,7 +2085,7 @@ textarea.form-control {
     transition: all 0.7s ease;
 }
 .navbar .dropdown-menu .nav__item .nav__item-link:after {
-    font-family: icomoon;
+    font-family: 'Russo One', sans-serif;
     content: "";
     position: absolute;
     top: 0;
@@ -2176,7 +2176,7 @@ textarea.form-control {
 .header-transparent .module__btn,
 .header-transparent .module__btn-request,
 .header-transparent .nav__item .nav__item-link {
-    /* color: #fff; */
+    color: #fff;
 }
 .header-transparent .module__btn-phone a {
     color: #fff;
@@ -2318,7 +2318,7 @@ textarea.form-control {
 }
 .module__btn-phone a {
     font-size: 30px;
-    font-family: Teko, sans-serif;
+    font-family: 'Russo One', sans-serif;
 }
 .module__search-container {
     position: fixed;
@@ -2438,7 +2438,7 @@ textarea.form-control {
     color: #2d4b92;
 }
 .module__search-container .search__input {
-    font-family: Teko, sans-serif;
+    font-family: 'Russo One', sans-serif;
     color: #1b1a1a;
     font-size: 45px;
     font-weight: 300;
@@ -3029,7 +3029,7 @@ textarea.form-control {
     margin-bottom: 27px;
 }
 .accordion-item .accordion__item-title {
-    font-family: Teko, sans-serif;
+    font-family: 'Russo One', sans-serif;
     color: #222;
     font-weight: 500;
     font-size: 22px;
@@ -3135,7 +3135,7 @@ textarea.form-control {
     margin-right: 8px;
 }
 .footer__contact-phone a {
-    font-family: Teko, sans-serif;
+    font-family: 'Russo One', sans-serif;
     font-size: 35px;
     font-weight: 300;
     color: #2d4b92;
@@ -3492,7 +3492,7 @@ textarea.form-control {
 }
 .slider .slide__subtitle {
     display: block;
-    font-family: Roboto, sans-serif;
+    font-family: 'Russo One', sans-serif;
     font-size: 14px;
     line-height: 1;
     font-weight: 700;
@@ -3794,7 +3794,7 @@ textarea.form-control {
     transition: transform 0.3s ease;
 }
 .feature-item .feature__subtitle {
-    font-family: Roboto, sans-serif;
+    font-family: 'Russo One', sans-serif;
     font-size: 14px;
     display: inline-block;
     margin-bottom: 6px;
@@ -4858,7 +4858,7 @@ textarea.form-control {
     height: 100%;
 }
 .blog-nav .blog__nav-content span {
-    font-family: Roboto, sans-serif;
+    font-family: 'Russo One', sans-serif;
     font-size: 13px;
     color: #616161;
     display: block;
@@ -4947,7 +4947,7 @@ textarea.form-control {
     margin-bottom: 11px;
 }
 .comments-list .comment__item .comment__content .comment__date {
-    font-family: Roboto, sans-serif;
+    font-family: 'Russo One', sans-serif;
     color: #616161;
     font-size: 12px;
     line-height: 1;
@@ -5076,7 +5076,7 @@ textarea.form-control {
     margin-right: 13px;
 }
 .contact__panel .contact__panel-banner .contact__number a {
-    font-family: Teko, sans-serif;
+    font-family: 'Russo One', sans-serif;
     color: #fff;
     font-size: 50px;
     font-weight: 300;
@@ -5198,7 +5198,7 @@ textarea.form-control {
     margin-bottom: 40px;
 }
 .pricing-item .pricing__price {
-    font-family: Teko, sans-serif;
+    font-family: 'Russo One', sans-serif;
     font-size: 50px;
     color: #1b1a1a;
     font-weight: 400;
@@ -5307,7 +5307,7 @@ textarea.form-control {
     font-size: 60px;
 }
 .counter-item .counter__subtitle {
-    font-family: Teko, sans-serif;
+    font-family: 'Russo One', sans-serif;
     font-size: 14px;
     font-weight: 700;
     line-height: 1;
@@ -6225,7 +6225,6 @@ textarea.form-control {
 .lead {
     font-size: 1.5vw;
     color: black;
-    font-family: 'Montserrat', sans-serif;
 }
 
 .slide-item::before {
@@ -6750,6 +6749,23 @@ textarea.form-control {
     transform: translateX(-3px);
     transition: .5s ease;
     }
+
+/* Video CSS */
+.bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+  }
+  
+  .text-carousel {
+    position: relative;
+    z-index: 1;
+  }
+  
 
   @media screen and (max-width: 768px) {
     .titlestyling {

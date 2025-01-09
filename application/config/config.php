@@ -24,6 +24,8 @@ defined('BASEPATH') or exit('No direct script access allowed');
 |
 */
 $config['base_url'] = 'http://localhost/toyo/';
+$config['base_url'] = 'http://192.168.1.8/toyo/';
+
 // $config['base_url'] = 'https://www.ofs-india.toyo-eng.com/';
 
 // $config['base_url'] = 'http://localhost/toyo/';
