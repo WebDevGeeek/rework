@@ -2160,7 +2160,7 @@ textarea.form-control {
 }
 .header-transparent .navbar {
     border-bottom: 1px solid rgba(255, 255, 255, 0.15);
-    /* background-color: transparent; */
+    background-color: transparent;
 }
 .header-transparent .navbar .navbar-toggler .menu-lines span,
 .header-transparent .navbar .navbar-toggler .menu-lines:after,
@@ -6668,4 +6668,100 @@ textarea.form-control {
   .cta-button:hover {
     background: white;
     color: black;
+  }
+
+  /* Phase 2 styling  */
+
+  .removingMB {
+    margin-bottom: 0px !important;
+  }
+
+  /* Color's Of modec */
+  .modecBlue {
+    color: #003399;
+  }
+  .modecRed {
+   color: #ff0033;
+  }
+  .modecGrey {
+    color: #b2bcce;
+  }
+  .modecCyan {
+    color: #2699cd;
+  }
+  .modecNavy {
+    color: #23344f;
+  }
+
+  .hd {
+    border-width : 3px;
+    border-color: #003399;
+  }
+  .hu {
+    border-width : 3px;
+    border-color: #ff0033;
+  }
+  .titlestyling {
+    font-size: 46px;
+    font-weight: lighter;
+    line-height: 1.1;
+  }
+  .contentSize {
+    font-size: 23px;
+  }
+  .secondaryTitles {
+    font-size: 20px;
+  }
+
+  .hoverUnderLine {
+    border-bottom: 3px solid transparent;
+    display: inline-block;
+    padding-bottom: 5px;
+    transition: border-bottom-color 0.3s ease;
+}
+.addingCopy::after {
+    content: "";
+        transform: rotate(45deg);
+        display: inline-block;
+        margin: -4px 0 0 4px;
+        width: 9px;
+        height: 9px;
+        border-top: 2px solid #fc1921;
+        border-right: 2px solid #fc1921;
+}
+
+.hoverUnderLine:hover {
+    border-bottom: 3px solid #003399;
+}
+/* Image Hover Effect */
+.shadow img {
+    transition: .5s ease;
+    }
+    
+    .shadow img:hover{
+    box-shadow:
+    1px 1px grey,
+    2px 2px grey,
+    3px 3px grey,
+    4px 4px grey,
+    5px 5px grey,
+    6px 6px grey;
+    -webkit-transform: translateX(-3px);
+    transform: translateX(-3px);
+    transition: .5s ease;
+    }
+
+  @media screen and (max-width: 768px) {
+    .titlestyling {
+      font-size: 23px;
+    }
+    .contentSize {
+        font-size: 14px;
+      }
+      .secondaryTitles {
+        font-size: 17px;
+      }
+      .card-body {
+        padding: 8px 0px 14px 1px;
+      }
   }

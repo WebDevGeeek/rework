@@ -232,7 +232,7 @@
       border-color: #fc1921;
       color: #fc1921;
     }
-    }
+    
 
     .parallax__black-line-overflow {
       z-index: 20;

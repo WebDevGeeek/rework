@@ -87,7 +87,11 @@
       <div class="row justify-content-center">
         <div class="col-md-8">
           <div class="text-center">
-            <h2 class="display-4 font-weight-bold about-title about-us-title">about us</h2>
+            <div class="col">
+              <hr class="w-25 mx-auto hu">
+              <h2 class="titlestyling removingMB">About Us</h2>
+              <hr class="w-25 mx-auto hd">
+            </div>
             <div class="container my-4">
               <div class="about-description">
                 <p class="lead mb-3 text-justify">
@@ -120,12 +124,65 @@
           </h1>
 
           <p class="ocean">OFS India is committed to OCEAN</p>
-          
+
           <a href="<?php echo base_url(); ?>vision" class="cta-button">Learn More</a>
         </div>
       </div>
+
+      <!-- JOB SECTION -->
+      <section class="related-fields py-5">
+        <div class="container">
+          <div class="row text-center mb-4">
+            <div class="col">
+              <hr class="w-25 mx-auto hu">
+              <h2 class="titlestyling removingMB">Related Fields</h2>
+              <hr class="w-25 mx-auto hd">
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-4 ">
+              <div class="card border-0">
+                <div class="shadow">
+                  <img src="assets/images/placeholder/31343C.svg" class="card-img-top" alt="Diversity and Inclusion">
+                </div>
+                <div class="card-body">
+                <a href="<?php echo base_url(); ?>recruitment-scam" class="hoverUnderLine">
+                    <h5 class="card-title secondaryTitles mb-0 addingCopy">Recruitment Policy</h5>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 ">
+              <div class="card border-0">
+                <div class="shadow">
+                  <img src="assets/images/placeholder/31343C.svg" class="card-img-top" alt="Diversity and Inclusion">
+                </div>
+                <div class="card-body">
+                <a href="<?php echo base_url(); ?>recruitment-scam" class="hoverUnderLine">
+                    <h5 class="card-title secondaryTitles mb-0 addingCopy">Diversity and Inclusion</h5>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 ">
+              <div class="card border-0">
+                <div class="shadow">
+                  <img src="assets/images/placeholder/31343C.svg" class="card-img-top" alt="Recruitment Scam">
+                </div>
+                <div class="card-body">
+                  <a href="<?php echo base_url(); ?>recruitment-scam" class="hoverUnderLine">
+                    <h5 class="card-title secondaryTitles mb-0 addingCopy">Recruitment Scam</h5>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <!-- HEre sould be adding the removed code -->
-       
+
 
       <!-- till here removed code will be Added -->
       <!-- ========================
