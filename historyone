@@ -1,0 +1,123 @@
+<?php $this->load->view('layout/header'); ?>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+        .timeline {
+            border-left: 3px solid #007bff;
+            border-bottom-right-radius: 4px;
+            border-top-right-radius: 4px;
+            margin: 0 auto;
+            position: relative;
+            padding: 50px;
+            list-style: none;
+            text-align: left;
+            max-width: 70%;
+        }
+        .event {
+            border-bottom: 1px dashed #007bff;
+            padding-bottom: 25px;
+            margin-bottom: 25px;
+            position: relative;
+        }
+        .event:last-of-type {
+            padding-bottom: 0;
+            margin-bottom: 0;
+            border: none;
+        }
+        .event:before,
+        .event:after {
+            position: absolute;
+            display: block;
+            top: 0;
+        }
+        .event:before {
+            left: -207px;
+            content: attr(data-date);
+            text-align: right;
+            font-weight: bold;
+            font-size: 0.9em;
+            min-width: 120px;
+        }
+        .event:after {
+            box-shadow: 0 0 0 3px #007bff;
+            left: -55.8px;
+            background: #fff;
+            border-radius: 50%;
+            height: 9px;
+            width: 9px;
+            content: "";
+            top: 5px;
+        }
+        .company-section {
+            margin-bottom: 50px;
+        }
+    </style>
+
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center mb-5">Our Rich History</h1>
+        
+        <div class="company-section">
+            <h2 class="mb-4">TOYO MODEC OFS India Private Limited</h2>
+            <div class="timeline">
+                <div class="event" data-date="Aug 2024">
+                    <h3>Establishment of OFS India</h3>
+                    <p>TOYO MODEC OFS India Private Limited (OFS India) is established as a global capability centre in Bengaluru, India. It is a joint venture company of Toyo Engineering India Private Limited and Offshore Frontier Solutions Pte. Ltd.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="company-section">
+            <h2 class="mb-4">Toyo Engineering India Private Limited (Toyo-India)</h2>
+            <div class="timeline">
+                <div class="event" data-date="1976">
+                    <h3>Establishment of Toyo-India</h3>
+                    <p>Toyo-India was established by TOYO Engineering Corporation, Japan (Toyo-Japan).</p>
+                </div>
+                <div class="event" data-date="1979">
+                    <h3>Engineering Centre</h3>
+                    <p>Started the Engineering centre.</p>
+                </div>
+                <div class="event" data-date="1990s">
+                    <h3>Emergence as 'Preferred Engineering Partner'</h3>
+                    <p>With the opening of the Indian economy, Toyo-India emerged as a 'Preferred Engineering Partner' amongst public sector companies and renowned corporate houses.</p>
+                </div>
+                <div class="event" data-date="2000s">
+                    <h3>Expansion and Diversification</h3>
+                    <p>Executed India's FIRST operational LNG Regasification facility and broadened its horizons with breakthrough in Power and Water sectors.</p>
+                </div>
+                <div class="event" data-date="Present">
+                    <h3>Global Leading Engineering Partner</h3>
+                    <p>With nearly 5 decades of experience, Toyo-India continues to execute projects in diverse sectors and aims to become a 'Global Leading Engineering Partner'.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="company-section">
+            <h2 class="mb-4">Offshore Frontier Solutions Pte. Ltd. (OFS-S) & MODEC</h2>
+            <div class="timeline">
+                <div class="event" data-date="1968">
+                    <h3>Foundation of Mitsui Ocean Development & Engineering Company</h3>
+                    <p>Founded as a fifty-fifty joint venture by Mitsui & Co. and Mitsui Shipbuilding & Engineering.</p>
+                </div>
+                <div class="event" data-date="1987">
+                    <h3>MODEC Technical Service</h3>
+                    <p>MODEC Technical Service, a subsidiary of the company, took over the business.</p>
+                </div>
+                <div class="event" data-date="1988">
+                    <h3>MODEC Inc.</h3>
+                    <p>MODEC Technical Service changes its name to MODEC Inc. and takes over the business of Mitsui Ocean Development & Engineering Company.</p>
+                </div>
+                <div class="event" data-date="2022">
+                    <h3>Formation of OFS-S</h3>
+                    <p>Offshore Frontier Solutions Pte. Ltd., Singapore (OFS-S) is formed as a joint venture by MODEC Inc. and Toyo Engineering Corporation for the EPCI business of FPSO vessels.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>

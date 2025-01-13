@@ -5,9 +5,10 @@ html {
 body {
     background-color: #fff;
     font-family: 'Russo One', sans-serif;
-    font-size: 14px;
+    font-size: 1rem;
     font-weight: 400;
-    color: #9b9b9b;
+    line-height: 1.5;
+    text-align: left;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
@@ -833,7 +834,7 @@ h6 {
 p {
     font-size: 14px;
     line-height: 24px;
-    font-weight: 400;
+    font-weight: lighter;
     margin-bottom: 15px;
 }
 h1 {
@@ -1617,7 +1618,8 @@ textarea.form-control {
 }
 .breadcrumb {
     background-color: transparent;
-    padding: 0;
+    padding: 22px;
+    margin-left: 10px;
 }
 .breadcrumb-item {
     position: relative;
@@ -1915,6 +1917,15 @@ textarea.form-control {
     position: relative;
     z-index: 1010;
 }
+
+/* Make header fixed when the body has data-page="home" */
+body[data-page="home"] .header {
+    position: fixed;
+    padding-left: 5%;
+    z-index: 1010;
+    width: 100%;
+}
+
 .navbar {
     padding: 0;
     height: 100px;
@@ -2184,6 +2195,14 @@ body[data-page="home"] .header-transparent .nav__item .nav__item-link {
     color: #fff; /* White for the homepage */
 }
 
+body[data-page="home"] .header-transparent .navbar {
+    border-bottom: none;
+    background-color: transparent;
+}
+.header-transparent .navbar {
+    border-bottom: 1px solid #ededed;
+    background-color: transparent;
+}
 .header-transparent .module__btn-phone a {
     color: #fff;
 }
@@ -6697,7 +6716,14 @@ body[data-page="home"] .header-transparent .nav__item .nav__item-link {
   .modecNavy {
     color: #23344f;
   }
-
+.modecHover {
+    color: black;
+    transition: color 0.3s ease, text-decoration 0.3s ease; 
+}
+.modecHover:hover {
+    color: #ff0033;
+    text-decoration: underline;
+}
   .hd {
     border-width : 3px;
     border-color: #003399;
@@ -6739,11 +6765,11 @@ body[data-page="home"] .header-transparent .nav__item .nav__item-link {
     border-bottom: 3px solid #003399;
 }
 /* Image Hover Effect */
-.shadow img {
+.shadowss img {
     transition: .5s ease;
     }
     
-    .shadow img:hover{
+    .shadowss img:hover{
     box-shadow:
     1px 1px grey,
     2px 2px grey,
@@ -6763,7 +6789,7 @@ body[data-page="home"] .header-transparent .nav__item .nav__item-link {
     left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: fill;
     z-index: -1;
   }
   
@@ -6771,7 +6797,26 @@ body[data-page="home"] .header-transparent .nav__item .nav__item-link {
     position: relative;
     z-index: 1;
   }
-  
+  /* Caeer Sections CSS */
+  .fs-46 {
+    font-size: 46px;
+  }
+.titleSection {
+    padding: 2.625rem 0px 0px 1.75rem;
+    padding-left: 7%;
+}
+.textSection {
+    width: 100%;
+    margin-right: auto;
+    margin-left: 5%;
+    padding-right: 12% !important;
+}
+.ll {
+    border-left: 4px solid #003399;
+    padding-left: 15px;
+    font-weight: 300;
+    color: #003399;
+}
 
   @media screen and (max-width: 768px) {
     .titlestyling {
@@ -6786,4 +6831,66 @@ body[data-page="home"] .header-transparent .nav__item .nav__item-link {
       .card-body {
         padding: 8px 0px 14px 1px;
       }
+  }
+
+  .video-container {
+    position: relative;
+    width: 100%;
+  }
+  
+  .bg-video {
+    width: 100%;
+    height: auto;
+  }
+  
+  .overlay-text {
+    position: absolute;
+    top: 10%; /* Adjust this value to move text up/down */
+    left: 50%;
+    transform: translateX(-50%);
+    color: white; /* Text color */
+    font-weight: bold;
+    text-align: center;
+    z-index: 1;
+  }
+
+  .resizing {
+    font-size: 24px !important;
+  }
+
+  .resizing {
+    position: relative;
+    padding-left: 20px; /* Space for the dot */
+  }
+  .resizing::before {
+    content: "•";
+    position: absolute;
+    right: 271px;
+    color: white;
+    font-size: 30px;
+  }
+  .oneR::before {
+    right: 201px;
+  }
+  .oneRR::before {
+    right: 241px;
+  }
+  .dotts {
+    position: relative;
+    padding-left: 20px; /* Space for the dot */
+  }
+  .dotts::before {
+    content: "•";
+    position: absolute;
+    left: 5px;
+    color: black;
+    font-size: 30px;
+  }
+
+  .mg99 {
+    margin-bottom: 9rem !important;
+  }
+  .removingShadows {
+    box-shadow: none !important;
+    border-radius: 0px !important;
   }

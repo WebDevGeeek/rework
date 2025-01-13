@@ -1,0 +1,140 @@
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(to right, #1e3a8a, #1e40af);
+    padding: 5rem 0;
+}
+
+/* Introduction Card */
+.intro-card {
+    max-width: 800px;
+    margin-top: -3rem;
+    z-index: 1;
+    line-height: 1.6;
+}
+
+/* Timeline Styles */
+.timeline {
+    position: relative;
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem 0;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50px;
+    height: 100%;
+    width: 2px;
+    background: #e2e8f0;
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 3rem;
+    padding-left: 70px;
+}
+
+.timeline-icon {
+    position: absolute;
+    left: 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #f0f9ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    transition: all 0.3s ease;
+}
+
+.timeline-icon i {
+    color: #1e40af;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+}
+
+.timeline-item:hover .timeline-icon {
+    background: #1e40af;
+}
+
+.timeline-item:hover .timeline-icon i {
+    color: white;
+}
+
+.timeline-year {
+    display: inline-block;
+    padding: 0.35rem 1rem;
+    background: #f0f9ff;
+    color: #1e40af;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 0.875rem;
+    margin-bottom: 0.5rem;
+}
+
+.timeline-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #1a202c;
+    margin-bottom: 1rem;
+}
+
+.timeline-description {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-description p {
+    color: #4a5568;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Present Day Section */
+.present-day {
+    max-width: 800px;
+}
+
+.present-day-content {
+    background: linear-gradient(to right, #1e3a8a, #1e40af);
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.present-day-content p {
+    line-height: 1.7;
+    margin-bottom: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .timeline::before {
+        left: 30px;
+    }
+    
+    .timeline-item {
+        padding-left: 50px;
+    }
+    
+    .timeline-icon {
+        width: 32px;
+        height: 32px;
+    }
+    
+    .timeline-icon i {
+        font-size: 1rem;
+    }
+    
+    .timeline-title {
+        font-size: 1.25rem;
+    }
+    
+    .hero-section {
+        padding: 3rem 0;
+    }
+}
